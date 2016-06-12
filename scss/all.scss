@@ -1,0 +1,294 @@
+@import "core.scss";
+
+a:focus {
+	outline:none;
+}
+header {
+
+}
+
+section.contacts {
+	margin-top: 5%;
+	@include inline-block;
+	p {
+		margin:0;
+	}
+	.rowTitle {
+		@include inline-block;
+		.contact {
+			border-left: 4px solid $color-yellow;
+			font: 36px/48px $font-GothamBlack, sans-serif;
+			color: $color-dark-grey; 
+			@media (max-width: $screen-xs-max) {
+				font-size: 24px;
+				text-align: center;
+				border: 0;
+			}
+			p {
+				text-transform: $text-transform-up;
+			}
+		}
+		.button_letter {
+			margin-top: 17px;
+			a {
+			@include button($color-yellow,$color-yellow,
+			 $text-button, 10px,  $text-transform-up); 
+			}	
+			@media (max-width: $screen-xs-max) {
+				text-align: center;
+			}
+		}
+	}
+	.rowContacts {
+		@include inline-block;
+		margin-top: 40px;
+		margin-bottom: 6%;
+		.title_contacts {
+			@media (max-width: $screen-xs-max) {
+				padding-top:10px;
+			}
+			p {
+				font: 13px/20px $font-GothamReg, sans-serif;
+				color: $text-grey;
+			  }
+		}
+		.adress{
+			p{
+				font: 15px/24px $font-GothamReg, sans-serif;
+					color: $text-dark-grey;	
+			}
+				
+		}
+		.phone {
+			@extend .adress;
+		}
+		.email {
+			font: 15px/24px $font-GothamReg, sans-serif;
+			@media (min-width: $screen-sm-min) and (max-width: 776px) {
+				margin-left: -5px;
+			}
+			a {
+				color: $text-blue;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			
+		}
+	}
+}
+
+.popUp {
+  	max-width: 50%;
+  	@media (min-width: $screen-md-min) {
+  		max-width: 660px;
+  	}
+  	@media (max-width: $screen-sm-max) {
+  		max-width: 70%;
+  	}
+	background: #fff;
+	margin: 0 auto; 
+	margin-top: 10%;
+	color: $text-dark-grey; 
+	padding: 15px 0 25px;
+	cursor: auto; 
+	border-radius: 7px;
+	.close  {
+		width: 19px;
+		height: 18px;
+		margin-right: 10px;
+		opacity:1;
+		background: url("../img/popUp-letter/close_popUp.png") no-repeat top;
+		&:hover {
+			background-position: bottom;
+		}
+	}
+	.content_modal {
+		padding: 0 7%;
+		p.title_popUp {
+		border-left: 4px solid $color-yellow;	
+		font: 24px $font-GothamBlack, sans-serif;
+		text-transform: $text-transform-up;
+		padding: 5px 20px;
+		@media (max-width: $screen-xs-max) {
+				font-size: 18px;
+		}
+		}
+		form {
+			margin-top: 9%;
+			input {
+				height: 48px;
+				@include placeholder;
+			}
+			.form_name, .form_left {
+				padding-left: 0;
+				@media (max-width: $screen-sm-max) {
+					padding-right:0;
+				}
+			}
+			.form_email, .form_right {
+				padding-right:0;
+				@media (max-width: $screen-sm-max) {
+					padding-left:0;
+				}
+			}
+
+			.checkbox {
+			  vertical-align: top;
+			  margin: 0 3px 0 0;
+			  width: 17px;
+			  height: 17px;
+			}
+			.checkbox + label {
+			  cursor: pointer;
+			}
+			.checkbox:not(checked) {
+			  position: absolute;
+			  opacity: 0;
+			}
+			.checkbox:not(checked) + label {
+			  position: relative; 
+			  padding: 0 0 0 60px; 
+			}
+			.checkbox:not(checked) + label:before {
+			  content: '';
+			  position: absolute;
+			  top: -4px;
+			  left: 0;
+			  width: 50px;
+			  height: 26px;
+			  border-radius: 13px;
+			  background: #898e91;
+			}
+
+			.checkbox:not(checked) + label:after {
+			  content: '';
+			  position: absolute;
+			  top: -2px;
+			  left: 2px;
+			  width: 22px;
+			  height: 22px;
+			  border-radius: 10px;
+			  background: #FFF;
+			  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+			  transition: all .2s; 
+			}
+	
+			.checkbox:checked + label:before {
+			  background: $text-blue;
+			}
+			
+			.checkbox:checked + label:after {
+			  left: 26px;
+			}
+
+			#label_checkbox {
+				font: 15px $font-GothamReg, sans-serif;
+				color: $text-dark-grey;
+			}
+			.checkbox_form {
+				padding: 5% 0 0 11%;
+				@media (max-width: $screen-sm-max) {
+					padding: 3% 0 4% 2% !important;
+				}
+			}
+			.checkbox_iphone {
+				padding-top: 5px;
+				@media (max-width: $screen-sm-max) {
+					text-align: right !important;
+				}
+			}
+						
+			textarea {
+				@include placeholder;
+				padding-top: 15px;
+								
+			}
+			button {
+				@include button($color-yellow,
+				 $color-yellow, $text-button,
+				  10px,  $text-transform-up );
+				margin-top: 9%;
+				&:focus {
+					outline: none;
+					background: $color-yellow;
+					border-color: $color-yellow;
+				}
+			}
+		}
+		.confidentiality {
+			margin-top: 35px;
+			margin-bottom: 25px;
+			p {
+				font: 13px/18px $font-GothamReg, sans-serif;
+				color: #808080;
+				a {
+					@extend p; 
+					color: $text-blue;
+					border-bottom: 1px solid #dbe4f6;
+					text-decoration: none;
+					&:hover {
+						text-decoration: none;
+						border-bottom: 1px solid $text-blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+.form_form, .form_button_up {
+		margin-top: 7% !important;
+	}
+
+.thanks {
+	background: $color-white;
+	margin-top: 250px;
+	@media (max-width: $screen-sm-max) {
+		margin-top: 0;
+	}
+	.rowThanks {
+		color: $text-dark-grey;
+		@include inline-block;
+		h1 {
+			font: 36px $font-GothamBlack, sans-serif;
+			text-transform: $text-transform-up;
+		}
+		p {
+			font: 15px/20px $font-GothamReg, sans-serif;
+			text-transform: none;
+			color: $text-dark-grey;
+			padding-top: 6px;
+			a {
+				color: $text-blue;
+			}
+		}
+	}
+	.rowButtons {
+		@include inline-block;
+		margin-top: 5%;
+		.left_button {
+			@media (max-width: $screen-xs-max) {
+				text-align: center;
+			}
+			.group_VK {
+				@include button(#567ca4, #567ca4, #fff, 7px, $text-transform-up);
+			}
+		}
+		.right_button {
+			@media (max-width: $screen-xs-max) {
+				text-align: center;
+				margin-top: 40px;
+			}
+			.return {
+				@include button(#f3f3f3, #f3f3f3, $text-grey, 7px, $text-transform-up);
+			}
+		}
+
+	}
+}
+
+
+
+
+
+

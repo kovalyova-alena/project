@@ -1,0 +1,42 @@
+//inline-block 
+@mixin inline-block {
+	display: inline-block;
+	width: 100%;
+}
+
+
+//button 
+/*five parametrs (background-color, border-color,
+ text-color, border-radius, text-transform) */
+	@mixin button($color-yellow, $color-border-button, $text-button,
+	 $radius-button, $text-transform-up) {
+		border: 2px solid $color-border-button;
+		border-radius:  $radius-button;
+		color: $text-button;
+		background: $color-yellow;
+		padding: 16px 26px;
+		text-decoration: none;
+		text-transform: $text-transform-up;
+		font: 13px/13px 'GothamProBold', sans-serif;
+	}
+
+//placeholder 
+@mixin placeholder {
+	border-color: $color-border-form;
+	box-shadow: none;
+	color: $text-dark-grey; 
+	font: 15px $font-GothamReg;
+	padding-left: 20px;
+	border-radius: 7px;
+	&:focus {
+		border: 2px solid #c74040;
+	}
+	&::-moz-placeholder { 
+		color: $text-placeholder;
+		font: 15px $font-GothamReg;
+	}
+	&::-webkit-input-placeholder {
+		color: $text-placeholder;
+		font: 15px $font-GothamReg;
+	}
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<title>KQ Квест-комната</title>
+	
+</head>
+<body>
+<a href="#myModal" data-toggle="modal">
+	<img src="../img/popUp-form/table.png" alt="" class="img-responsive">
+</a>
+	
+<!-------------------MODAL---------------- -->	
+
+  	<div class="modal fade" id="myModal" tabindex="-1">  	
+  	<div class="container popUp">	
+		<div class="col-md-12 col-sm-12 col-xs-12 text-right close" data-dismiss="modal">
+			
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12 content_modal">
+			<p class="title_popUp">
+				<span>Бронирование</span>
+			</p>
+			<form action="" role="form" class="form_form">
+				<div class="col-md-6 col-sm-12 form_left">
+				    <div class="form-group">
+				      <input type="text" class="form-control" id="day" placeholder="day" name="day">
+				    </div>
+					<div class="form-group">
+					   <input type="text" class="form-control" id="time" placeholder="time" name="time">
+					</div>
+
+					<div>
+						<div class="col-md-8 col-sm-6 checkbox_form">
+							<label for="checkbox" id="label_checkbox">
+								У меня есть скидка
+							</label>
+						</div>
+					<div class="col-md-4 col-sm-6 checkbox_iphone">
+						<div>
+								<input type="checkbox" class="checkbox" id="checkbox" />
+								<label for="checkbox"></label>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-6 col-sm-12 form_right">
+				    <div class="form-group">
+				      <input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name">
+				    </div>
+					<div class="form-group">
+					   <input type="tel" class="form-control" id="tel" placeholder="Контактный телефон" name="tel">
+					</div>
+					<div class="form-group">
+					   <input type="email" class="form-control" id="email" placeholder="Ваш E-mail" name="email">
+					</div>
+				</div>
+				<div class="form-group text-center">
+    				<button type="submit" class="btn btn-default form_button_up" id="modal_submit">
+     					Забронировать комнату
+     				</button>
+    			</div>
+			</form>
+			<div class="confidentiality text-center">
+				<p>
+					Введенные данные строго конфиденциальны.
+					<br>
+					<a href="https://yandex.ru/legal/confidential/" target="blank"> Политика конфиденциальности </a>
+				</p>
+			</div>
+		</div>		
+	</div>	
+	</div>	   		   		
+
+</div>
+</body>
+</html>

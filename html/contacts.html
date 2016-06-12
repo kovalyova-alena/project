@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<title>KQ Квест-комната</title>
+	<script src="../js/js.js" async type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<section class="map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0uoBQJR36OzohfpjqIE4cHirwUAfMz5F&width=100%&height=400&lang=ru_UA&sourceType=constructor&scroll=true"></script>
+	</section>
+
+
+	<section class="contacts">
+		<div class="container">
+			<div class="rowTitle">
+				<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 contact">
+					<p>
+						Контакты
+					</p>
+				</div>
+				<div class="col-md-6 col-lg-5 col-sm-6 col-xs-12 text-right button_letter">
+					<a href="#myModal" id="letter" data-toggle="modal">
+						Написать письмо
+					</a>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<div class="rowContacts">
+				<div class="col-md-6 col-lg-5 col-sm-5 col-xs-12">
+					<div class="title_contacts">
+						<p>
+							Адрес
+						</p>
+					</div>
+					<div class="adress">
+						<p>
+							г. Харьков, ул. Плехановская 92, корпус Б, 13 этаж
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+					<div class="title_contacts">
+						<p>
+							Телефон
+						</p>
+					</div>
+					<div class="phone">
+						<p>
+							+38 (063) 10-70-380
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-4 col-sm-3 col-xs-12">
+					<div class="title_contacts">
+						<p>
+							E-mail
+						</p>
+					</div>
+					<div class="email">
+						<a href="#myModal" data-toggle="modal">
+							game@kingquest.com.ua
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-------------------MODAL---------------- -->	
+
+  	<div class="modal fade" id="myModal" tabindex="-1">  	
+  	<div class="container popUp">	
+		<div class="col-md-12 col-sm-12 col-xs-12 text-right close" data-dismiss="modal">
+			
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12 content_modal">
+			<p class="title_popUp">
+				<span>Написать письмо</span>
+			</p>
+			<form action="" role="form">
+				<div class="col-md-6 col-sm-12 form_name">
+				   <div class="form-group">
+				      <input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name">
+				  </div>
+				</div>
+				<div class="col-md-6  col-sm-12 form_email">
+					 <div class="form-group">
+					   <input type="email" class="form-control" id="email" placeholder="Ваш E-mail" name="email">
+					</div>
+				</div>
+				<textarea class="form-control" rows="5" name="commit" placeholder="Что Вы хотите написать?"></textarea>
+				<div class="form-group text-center">
+    				<button type="submit" class="btn btn-default" id="modal_submit">
+     					Отправить письмо
+     				</button>
+    			</div>
+			</form>
+			<div class="confidentiality text-center">
+				<p>
+					Введенные данные строго конфиденциальны.
+					<br>
+					<a href="https://yandex.ru/legal/confidential/" target="blank"> Политика конфиденциальности </a>
+				</p>
+			</div>
+		</div>		
+	</div>	
+	</div>	   		   		
+
+</div>
+</body>
+</html>

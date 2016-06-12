@@ -1,0 +1,246 @@
+/*five parametrs (background-color, border-color,
+ text-color, border-radius, text-transform) */
+a:focus {
+  outline: none; }
+
+section.contacts {
+  margin-top: 5%;
+  display: inline-block;
+  width: 100%; }
+  section.contacts p, section.contacts .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts a {
+    margin: 0; }
+  section.contacts .rowTitle {
+    display: inline-block;
+    width: 100%; }
+    section.contacts .rowTitle .contact {
+      border-left: 4px solid #ebc339;
+      font: 36px/48px "GothamProBlack", sans-serif;
+      color: #333; }
+      @media (max-width: 767px) {
+        section.contacts .rowTitle .contact {
+          font-size: 24px;
+          text-align: center;
+          border: 0; } }
+      section.contacts .rowTitle .contact p, section.contacts .rowTitle .contact .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowTitle .contact a {
+        text-transform: uppercase; }
+    section.contacts .rowTitle .button_letter {
+      margin-top: 17px; }
+      section.contacts .rowTitle .button_letter a {
+        border: 2px solid #ebc339;
+        border-radius: 10px;
+        color: #272727;
+        background: #ebc339;
+        padding: 16px 26px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 13px/13px 'GothamProBold', sans-serif; }
+      @media (max-width: 767px) {
+        section.contacts .rowTitle .button_letter {
+          text-align: center; } }
+  section.contacts .rowContacts {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 6%; }
+    @media (max-width: 767px) {
+      section.contacts .rowContacts .title_contacts {
+        padding-top: 10px; } }
+    section.contacts .rowContacts .title_contacts p, section.contacts .rowContacts .title_contacts .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .title_contacts a {
+      font: 13px/20px "GothamProRegular", sans-serif;
+      color: #999; }
+    section.contacts .rowContacts .adress p, section.contacts .rowContacts .phone p, section.contacts .rowContacts .adress .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .adress a, section.contacts .rowContacts .phone .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .phone a {
+      font: 15px/24px "GothamProRegular", sans-serif;
+      color: #333; }
+    section.contacts .rowContacts .email {
+      font: 15px/24px "GothamProRegular", sans-serif; }
+      @media (min-width: 768px) and (max-width: 776px) {
+        section.contacts .rowContacts .email {
+          margin-left: -5px; } }
+      section.contacts .rowContacts .email a {
+        color: #4c82d9;
+        text-decoration: none;
+        cursor: pointer; }
+
+.popUp {
+  max-width: 50%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10%;
+  color: #333;
+  padding: 15px 0 25px;
+  cursor: auto;
+  border-radius: 7px; }
+  @media (min-width: 992px) {
+    .popUp {
+      max-width: 660px; } }
+  @media (max-width: 991px) {
+    .popUp {
+      max-width: 70%; } }
+  .popUp .close {
+    width: 19px;
+    height: 18px;
+    margin-right: 10px;
+    opacity: 1;
+    background: url("../img/popUp-letter/close_popUp.png") no-repeat top; }
+    .popUp .close:hover {
+      background-position: bottom; }
+  .popUp .content_modal {
+    padding: 0 7%; }
+    .popUp .content_modal p.title_popUp, .popUp .content_modal .confidentiality p a.title_popUp {
+      border-left: 4px solid #ebc339;
+      font: 24px "GothamProBlack", sans-serif;
+      text-transform: uppercase;
+      padding: 5px 20px; }
+      @media (max-width: 767px) {
+        .popUp .content_modal p.title_popUp, .popUp .content_modal .confidentiality p a.title_popUp {
+          font-size: 18px; } }
+    .popUp .content_modal form {
+      margin-top: 9%; }
+      .popUp .content_modal form input {
+        height: 48px;
+        border-color: #d9d9d9;
+        box-shadow: none;
+        color: #333;
+        font: 15px "GothamProRegular";
+        padding-left: 20px;
+        border-radius: 7px; }
+        .popUp .content_modal form input:focus {
+          border: 2px solid #c74040; }
+        .popUp .content_modal form input::-moz-placeholder {
+          color: #808080;
+          font: 15px "GothamProRegular"; }
+        .popUp .content_modal form input::-webkit-input-placeholder {
+          color: #808080;
+          font: 15px "GothamProRegular"; }
+      .popUp .content_modal form .form_name, .popUp .content_modal form .form_left {
+        padding-left: 0; }
+        @media (max-width: 991px) {
+          .popUp .content_modal form .form_name, .popUp .content_modal form .form_left {
+            padding-right: 0; } }
+      .popUp .content_modal form .form_email, .popUp .content_modal form .form_right {
+        padding-right: 0; }
+        @media (max-width: 991px) {
+          .popUp .content_modal form .form_email, .popUp .content_modal form .form_right {
+            padding-left: 0; } }
+      .popUp .content_modal form .checkbox {
+        vertical-align: top;
+        margin: 0 3px 0 0;
+        width: 17px;
+        height: 17px; }
+      .popUp .content_modal form .checkbox + label {
+        cursor: pointer; }
+      .popUp .content_modal form .checkbox:not(checked) {
+        position: absolute;
+        opacity: 0; }
+      .popUp .content_modal form .checkbox:not(checked) + label {
+        position: relative;
+        padding: 0 0 0 60px; }
+      .popUp .content_modal form .checkbox:not(checked) + label:before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 0;
+        width: 50px;
+        height: 26px;
+        border-radius: 13px;
+        background: #898e91; }
+      .popUp .content_modal form .checkbox:not(checked) + label:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        -webkit-transition: all .2s;
+                transition: all .2s; }
+      .popUp .content_modal form .checkbox:checked + label:before {
+        background: #4c82d9; }
+      .popUp .content_modal form .checkbox:checked + label:after {
+        left: 26px; }
+      .popUp .content_modal form #label_checkbox {
+        font: 15px "GothamProRegular", sans-serif;
+        color: #333; }
+      .popUp .content_modal form .checkbox_form {
+        padding: 5% 0 0 11%; }
+        @media (max-width: 991px) {
+          .popUp .content_modal form .checkbox_form {
+            padding: 3% 0 4% 2% !important; } }
+      .popUp .content_modal form .checkbox_iphone {
+        padding-top: 5px; }
+        @media (max-width: 991px) {
+          .popUp .content_modal form .checkbox_iphone {
+            text-align: right !important; } }
+      .popUp .content_modal form textarea {
+        border-color: #d9d9d9;
+        box-shadow: none;
+        color: #333;
+        font: 15px "GothamProRegular";
+        padding-left: 20px;
+        border-radius: 7px;
+        padding-top: 15px; }
+        .popUp .content_modal form textarea:focus {
+          border: 2px solid #c74040; }
+        .popUp .content_modal form textarea::-moz-placeholder {
+          color: #808080;
+          font: 15px "GothamProRegular"; }
+        .popUp .content_modal form textarea::-webkit-input-placeholder {
+          color: #808080;
+          font: 15px "GothamProRegular"; }
+      .popUp .content_modal form button {
+        border: 2px solid #ebc339;
+        border-radius: 10px;
+        color: #272727;
+        background: #ebc339;
+        padding: 16px 26px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 13px/13px 'GothamProBold', sans-serif;
+        margin-top: 9%; }
+        .popUp .content_modal form button:focus {
+          outline: none;
+          background: #ebc339;
+          border-color: #ebc339; }
+    .popUp .content_modal .confidentiality {
+      margin-top: 35px;
+      margin-bottom: 25px; }
+      .popUp .content_modal .confidentiality p, .popUp .content_modal .confidentiality p a {
+        font: 13px/18px "GothamProRegular", sans-serif;
+        color: #808080; }
+        .popUp .content_modal .confidentiality p a {
+          color: #4c82d9;
+          border-bottom: 1px solid #dbe4f6;
+          text-decoration: none; }
+          .popUp .content_modal .confidentiality p a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #4c82d9; }
+
+.form_form, .form_button_up {
+  margin-top: 7% !important; }
+
+.thanks {
+  background: #fff; }
+  .thanks .rowThanks {
+    color: #333; }
+    .thanks .rowThanks h1 {
+      font: 36px "GothamProBlack", sans-serif;
+      text-transform: uppercase; }
+    .thanks .rowThanks p, .thanks .rowThanks .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .thanks .rowThanks a {
+      font: 15px "GothamProRegular", sans-serif;
+      text-transform: none;
+      color: #333; }
+      .thanks .rowThanks p a, .thanks .rowThanks .popUp .content_modal .confidentiality p a a, .popUp .content_modal .confidentiality p .thanks .rowThanks a a {
+        color: #4c82d9; }
+  .thanks .rowButtons .group_VK, .thanks .rowButtons .return {
+    border: 2px solid #567ca4;
+    border-radius: 10px;
+    color: #fff;
+    background: #567ca4;
+    padding: 16px 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 13px/13px 'GothamProBold', sans-serif; }
+
+/*# sourceMappingURL=all.css.map */
