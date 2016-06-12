@@ -284,7 +284,7 @@ section.contacts {
 				margin-top: 40px;
 			}
 			.return {
-				@include button(#f3f3f3, #f3f3f3, $text-grey, 7px, $text-transform-up);
+				@include button(#f3f3f3, #f3f3f3, $text-button, 7px, $text-transform-up);
 			}
 		}
 
@@ -304,14 +304,30 @@ section.contacts {
 		}
 	}
 	.rowPhotos {
-		margin-top: 30px;
+
 		@include inline-block;
 		img {
 			width: 100%;
+			margin-top: 30px;
 		}
 	}
+}
 
-
+.people_say {
+	@include inline-block;
+	background: $color-grey;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.people_title {
+		border-left: 3px solid $color-yellow;
+		p {
+			font: 36px $font-GothamBlack, sans-serif;
+			color: $color-dark-grey;
+		}
+	}
+	.more {
+		@include button($color-yellow, $color-yellow, #text-button, 7px, $text-transform-up);
+	}
 }
 
 

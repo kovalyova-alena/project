@@ -267,7 +267,7 @@ section.contacts {
     .thanks .rowButtons .right_button .return {
       border: 2px solid #f3f3f3;
       border-radius: 7px;
-      color: #999;
+      color: #272727;
       background: #f3f3f3;
       padding: 16px 26px;
       text-decoration: none;
@@ -286,10 +286,31 @@ section.contacts {
       font: 36px "GothamProBlack", sans-serif;
       color: #333; }
   .gallery .rowPhotos {
-    margin-top: 30px;
     display: inline-block;
     width: 100%; }
     .gallery .rowPhotos img {
-      width: 100%; }
+      width: 100%;
+      margin-top: 30px; }
+
+.people_say {
+  display: inline-block;
+  width: 100%;
+  background: #f3f3f3;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .people_say .people_title {
+    border-left: 3px solid #ebc339; }
+    .people_say .people_title p, .people_say .people_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .people_say .people_title a {
+      font: 36px "GothamProBlack", sans-serif;
+      color: #333; }
+  .people_say .more {
+    border: 2px solid #ebc339;
+    border-radius: 7px;
+    color: #text-button;
+    background: #ebc339;
+    padding: 16px 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 13px/13px 'GothamProBold', sans-serif; }
 
 /*# sourceMappingURL=all.css.map */
