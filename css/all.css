@@ -167,12 +167,16 @@ section.contacts {
         padding: 5% 0 0 11%; }
         @media (max-width: 991px) {
           .popUp .content_modal form .checkbox_form {
-            padding: 3% 0 4% 2% !important; } }
+            padding: 3% 0 4% 2%; } }
       .popUp .content_modal form .checkbox_iphone {
         padding-top: 5px; }
         @media (max-width: 991px) {
           .popUp .content_modal form .checkbox_iphone {
-            text-align: right !important; } }
+            text-align: right;
+            padding-right: 0; } }
+        @media (max-width: 767px) {
+          .popUp .content_modal form .checkbox_iphone {
+            padding: 0; } }
       .popUp .content_modal form textarea {
         border-color: #d9d9d9;
         box-shadow: none;
@@ -269,5 +273,23 @@ section.contacts {
       text-decoration: none;
       text-transform: uppercase;
       font: 13px/13px 'GothamProBold', sans-serif; }
+
+.gallery {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .gallery .photos_title {
+    border-left: 3px solid #ebc339; }
+    .gallery .photos_title p, .gallery .photos_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .gallery .photos_title a {
+      font: 36px "GothamProLight", sans-serif;
+      color: #333; }
+  .gallery .rowPhotos {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%; }
+    .gallery .rowPhotos img {
+      width: 100%; }
 
 /*# sourceMappingURL=all.css.map */

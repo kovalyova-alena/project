@@ -188,13 +188,17 @@ section.contacts {
 			.checkbox_form {
 				padding: 5% 0 0 11%;
 				@media (max-width: $screen-sm-max) {
-					padding: 3% 0 4% 2% !important;
+				padding: 3% 0 4% 2%;
 				}
 			}
 			.checkbox_iphone {
 				padding-top: 5px;
 				@media (max-width: $screen-sm-max) {
-					text-align: right !important;
+					text-align: right;
+					padding-right: 0;
+				}
+				@media (max-width: $screen-xs-max) {
+					padding: 0;
 				}
 			}
 						
@@ -287,7 +291,28 @@ section.contacts {
 	}
 }
 
+.gallery {
+	@include inline-block;
+	background: $color-white;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	.photos_title {
+		border-left: 3px solid $color-yellow;
+		p {
+			font: 36px $font-GothamLight, sans-serif;
+			color: $color-dark-grey;
+		}
+	}
+	.rowPhotos {
+		margin-top: 30px;
+		@include inline-block;
+		img {
+			width: 100%;
+		}
+	}
 
+
+}
 
 
 

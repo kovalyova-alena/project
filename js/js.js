@@ -14,6 +14,13 @@ $(document).on('ready', function() {
             }
             });
     });
-  
-	
+
+
+
+
+    $(".fancybox")
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 7
+        });
 });
