@@ -283,7 +283,7 @@ section.contacts {
   .gallery .photos_title {
     border-left: 3px solid #ebc339; }
     .gallery .photos_title p, .gallery .photos_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .gallery .photos_title a {
-      font: 36px "GothamProLight", sans-serif;
+      font: 36px "GothamProBlack", sans-serif;
       color: #333; }
   .gallery .rowPhotos {
     margin-top: 30px;
