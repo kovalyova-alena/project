@@ -313,4 +313,40 @@ section.contacts {
     text-transform: uppercase;
     font: 13px/13px 'GothamProBold', sans-serif; }
 
+.pick_room {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  .pick_room .room_title {
+    border-left: 3px solid #ebc339; }
+    .pick_room .room_title p, .pick_room .room_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .pick_room .room_title a {
+      font: 36px "GothamProLight", sans-serif;
+      color: #333;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+  .pick_room .rowRooms {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px; }
+    .pick_room .rowRooms .left_laboratory {
+      padding-left: 0; }
+      .pick_room .rowRooms .left_laboratory .laboratory {
+        width: 460px;
+        height: 250px;
+        background: url("../img/our-rooms/laboratory.jpg") top; }
+        .pick_room .rowRooms .left_laboratory .laboratory:hover {
+          background-position: bottom; }
+    @media (max-width: 991px) {
+      .pick_room .rowRooms .right_kruger {
+        padding-left: 0;
+        margin-top: 20px; } }
+    .pick_room .rowRooms .right_kruger .kruger {
+      width: 460px;
+      height: 250px;
+      background: url("../img/our-rooms/kruger.jpg") top; }
+      .pick_room .rowRooms .right_kruger .kruger:hover {
+        background-position: bottom; }
+
 /*# sourceMappingURL=all.css.map */
