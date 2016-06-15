@@ -40,3 +40,15 @@
 		font: 15px $font-GothamReg;
 	}
 }
+
+//title sections with left yellow border
+/*(border width, border-color, font-size, font, color */
+@mixin name-section($border-width, $color-yellow, $font-size, $font, $color) {
+	border-left: $border-width solid $color-yellow;
+	p {
+		font: $font-size $font, sans-serif;
+		color: $color;
+		text-transform: $text-transform-up;
+		margin-bottom: 0;
+	}
+}

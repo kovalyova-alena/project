@@ -336,13 +336,7 @@ section.contacts {
 	padding-top: 90px;
 	padding-bottom: 90px;
 	.room_title {
-		border-left: 3px solid $color-yellow;
-		p {
-			font: 36px $font-GothamLight, sans-serif;
-			color: $color-dark-grey;
-			text-transform: $text-transform-up;
-			margin-bottom: 0;
-		}
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey);
 	}
 	.rowRooms {
 		@include inline-block;
@@ -373,6 +367,32 @@ section.contacts {
 			}
 		}
 
+	}
+}
+
+.rules {
+	.title_rules {
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey);
+	}
+	.rowPlayers {
+		@include inline-block;
+		margin-top: 25px;
+		font: 15px/20px $font-GothamReg, sans-serif;
+		color: $text-dark-grey;
+		.left {
+			padding-left: 0;
+		}
+		.right {
+			padding-right: 0;
+		}
+		img {
+			margin-bottom: 7px;
+		}
+	}
+	.rowTime {
+		@include  inline-block;
+		@extend .rowPlayers;
+		margin-top: 5px;
 	}
 }
 
@@ -411,7 +431,10 @@ section.contacts {
 	@include inline-block;
 	.questions {
 		color: $text-dark-grey;
-		margin: 50px 0;
+		margin: 5% 0;
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+		}
 		h2 {
 			font: 36px $font-GothamLight, sans-serif;
 			text-transform: $text-transform-up;
@@ -425,7 +448,15 @@ section.contacts {
 		};
 	}
 	.button_write {
-		margin-top: 8%;
+		margin-top: 10%;
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+			margin-top: 11%;
+		}
+		@media (max-width: $screen-sm-max) {
+			margin-top: 3%;
+			padding-bottom: 7%;
+		}
+
 		a {
 			@include button($color-yellow, $color-border-button, $text-button, 7px, $text-transform-up);
 			&:hover {

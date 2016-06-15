@@ -1,5 +1,6 @@
 /*five parametrs (background-color, border-color,
  text-color, border-radius, text-transform) */
+/*(border width, border-color, font-size, font, color */
 a:focus {
   outline: none; }
 
@@ -349,6 +350,30 @@ section.contacts {
       .pick_room .rowRooms .right_kruger .kruger:hover {
         background-position: bottom; }
 
+.rules .title_rules {
+  border-left: 3px solid #ebc339; }
+  .rules .title_rules p, .rules .title_rules .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .rules .title_rules a {
+    font: 36px "GothamProLight", sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+.rules .rowPlayers, .rules .rowTime {
+  display: inline-block;
+  width: 100%;
+  margin-top: 25px;
+  font: 15px/20px "GothamProRegular", sans-serif;
+  color: #333; }
+  .rules .rowPlayers .left, .rules .rowTime .left {
+    padding-left: 0; }
+  .rules .rowPlayers .right, .rules .rowTime .right {
+    padding-right: 0; }
+  .rules .rowPlayers img, .rules .rowTime img {
+    margin-bottom: 7px; }
+.rules .rowTime {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px; }
+
 .accordion {
   margin-bottom: 20px; }
 
@@ -377,7 +402,10 @@ section.contacts {
   width: 100%; }
   .write_letter .questions {
     color: #333;
-    margin: 50px 0; }
+    margin: 5% 0; }
+    @media (max-width: 991px) {
+      .write_letter .questions {
+        text-align: center; } }
     .write_letter .questions h2 {
       font: 36px "GothamProLight", sans-serif;
       text-transform: uppercase; }
@@ -387,7 +415,14 @@ section.contacts {
       .write_letter .questions p span, .write_letter .questions .popUp .content_modal .confidentiality p a span, .popUp .content_modal .confidentiality p .write_letter .questions a span {
         font-family: "GothamProBold"; }
   .write_letter .button_write {
-    margin-top: 8%; }
+    margin-top: 10%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .write_letter .button_write {
+        margin-top: 11%; } }
+    @media (max-width: 991px) {
+      .write_letter .button_write {
+        margin-top: 3%;
+        padding-bottom: 7%; } }
     .write_letter .button_write a {
       border: 2px solid #262626;
       border-radius: 7px;
