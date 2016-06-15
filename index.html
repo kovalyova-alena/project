@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/fonts.css">
 
 	<title>KQ Квест-комната</title>
 </head>
@@ -76,6 +77,37 @@
 		</div>
 
 	-->
+		<div class="accordion" id="accordion2">
+			<div class="accordion-group">
+				<div class="accordion-heading"><a class="accordion-toggle" href="#collapseOne" data-toggle="collapse" data-parent="#accordion2"><br />
+					Меню #1<br />
+				</a></div>
+				<div class="accordion-body collapse in" id="collapseOne">
+					<div class="accordion-inner">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#8217;t heard of them accusamus labore sustainable VHS.</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading"><a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion2"><br />
+					Меню #2<br />
+				</a></div>
+				<div class="accordion-body collapse" id="collapseTwo">
+					<div class="accordion-inner">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#8217;t heard of them accusamus labore sustainable VHS.</div>
+				</div>
+			</div>
+			<div class="accordion-group">
+				<div class="accordion-heading"><a class="accordion-toggle" href="#collapseThree" data-toggle="collapse" data-parent="#accordion2"><br />
+					Меню #3<br />
+				</a></div>
+				<div class="accordion-body collapse" id="collapseThree">
+					<div class="accordion-inner">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#8217;t heard of them accusamus labore sustainable VHS.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
 	<div class="accordion">
 
 		<div class="text-center" id="FAQ1">
@@ -96,15 +128,70 @@
 				Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Выбрать квест комнату
 			</div>
 		</div>
-		
-		</div>
 
 		</div>
-		
-		
+
+		</div>
+
+<section class="write_letter">
+	<div class="container">
+		<div class="col-md-8 questions text-right">
+			<h2>У Вас остались вопросы?</h2>
+			<p>
+				Вы можете позвонить нам по телефону
+				<span> +38 (063) 10-70-380</span>
+				<br>или написать письмо, нажав на кнопку справа
+			</p>
+		</div>
+		<div class="col-md-4 button_write text-center">
+			<a href="#myModal" data-toggle="modal"> Написать письмо</a>
+		</div>
+	</div>
+
+</section>
+
+
+<!-------------------MODAL---------------- -->
+
+<div class="modal fade" id="myModal" tabindex="-1">
+	<div class="container popUp">
+		<div class="col-md-12 col-sm-12 col-xs-12 text-right close" data-dismiss="modal">
+
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12 content_modal">
+			<p class="title_popUp">
+				<span>Написать письмо</span>
+			</p>
+			<form action="" role="form">
+				<div class="col-md-6 col-sm-12 form_name">
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name">
+					</div>
+				</div>
+				<div class="col-md-6  col-sm-12 form_email">
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" placeholder="Ваш E-mail" name="email">
+					</div>
+				</div>
+				<textarea class="form-control" rows="5" name="commit" placeholder="Что Вы хотите написать?"></textarea>
+				<div class="form-group text-center">
+					<button type="submit" class="btn btn-default" id="modal_submit">
+						Отправить письмо
+					</button>
+				</div>
+			</form>
+			<div class="confidentiality text-center">
+				<p>
+					Введенные данные строго конфиденциальны.
+					<br>
+					<a href="https://yandex.ru/legal/confidential/" target="blank"> Политика конфиденциальности </a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
-	
 </body>
 </html>

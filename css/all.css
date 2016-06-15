@@ -27,7 +27,7 @@ section.contacts {
       margin-top: 17px; }
       section.contacts .rowTitle .button_letter a {
         border: 2px solid #ebc339;
-        border-radius: 10px;
+        border-radius: 7px;
         color: #272727;
         background: #ebc339;
         padding: 16px 26px;
@@ -306,7 +306,7 @@ section.contacts {
   .people_say .more {
     border: 2px solid #ebc339;
     border-radius: 7px;
-    color: #text-button;
+    color: #272727;
     background: #ebc339;
     padding: 16px 26px;
     text-decoration: none;
@@ -348,5 +348,57 @@ section.contacts {
       background: url("../img/our-rooms/kruger.jpg") top; }
       .pick_room .rowRooms .right_kruger .kruger:hover {
         background-position: bottom; }
+
+.accordion {
+  margin-bottom: 20px; }
+
+.accordion-group {
+  margin-bottom: 2px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px; }
+
+.accordion-heading {
+  border-bottom: 0; }
+
+.accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px; }
+
+.accordion-toggle {
+  cursor: pointer; }
+
+.accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid #e5e5e5; }
+
+.write_letter {
+  background: #ebc339;
+  display: inline-block;
+  width: 100%; }
+  .write_letter .questions {
+    color: #333;
+    margin: 50px 0; }
+    .write_letter .questions h2 {
+      font: 36px "GothamProLight", sans-serif;
+      text-transform: uppercase; }
+    .write_letter .questions p, .write_letter .questions .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .write_letter .questions a {
+      font: 15px/20px "GothamProRegular", sans-serif;
+      margin-top: 15px; }
+      .write_letter .questions p span, .write_letter .questions .popUp .content_modal .confidentiality p a span, .popUp .content_modal .confidentiality p .write_letter .questions a span {
+        font-family: "GothamProBold"; }
+  .write_letter .button_write {
+    margin-top: 8%; }
+    .write_letter .button_write a {
+      border: 2px solid #262626;
+      border-radius: 7px;
+      color: #272727;
+      background: #ebc339;
+      padding: 16px 26px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font: 13px/13px 'GothamProBold', sans-serif; }
+      .write_letter .button_write a:hover {
+        background-color: #333;
+        color: #ebc339; }
 
 /*# sourceMappingURL=all.css.map */
