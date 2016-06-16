@@ -14,7 +14,6 @@ $(document).on('ready', function() {
             }
             });
     });
-    $(".collapse").collapse();
 
 
     $(".fancybox")
