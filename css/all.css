@@ -5765,6 +5765,7 @@ button.close {
 a:focus {
   outline: none; }
 
+/*-------------------Section Contacts -----------------------*/
 section.contacts {
   margin-top: 5%;
   display: inline-block;
@@ -5823,6 +5824,7 @@ section.contacts {
         text-decoration: none;
         cursor: pointer; }
 
+/*-------------------Modal -----------------------*/
 .popUp {
   max-width: 50%;
   background: #fff;
@@ -5972,6 +5974,7 @@ section.contacts {
 .form_form, .form_button_up {
   margin-top: 7% !important; }
 
+/*--------------- Thanks Page -----------------------*/
 .thanks {
   background: #fff;
   margin-top: 250px; }
@@ -6022,6 +6025,7 @@ section.contacts {
       text-transform: uppercase;
       font: 13px/13px 'GothamProBold', sans-serif; }
 
+/*-------------------Section Gallery -----------------------*/
 .gallery {
   display: inline-block;
   width: 100%;
@@ -6040,6 +6044,7 @@ section.contacts {
       width: 100%;
       margin-top: 30px; }
 
+/*-------------------Section reviews -----------------------*/
 .people_say {
   display: inline-block;
   width: 100%;
@@ -6061,6 +6066,7 @@ section.contacts {
     text-transform: uppercase;
     font: 13px/13px 'GothamProBold', sans-serif; }
 
+/*-------------------Section Pick Rooms -----------------------*/
 .pick_room {
   display: inline-block;
   width: 100%;
@@ -6097,52 +6103,65 @@ section.contacts {
       .pick_room .rowRooms .right_kruger .kruger:hover {
         background-position: bottom; }
 
-.rules .title_rules {
-  border-left: 3px solid #ebc339; }
-  .rules .title_rules p, .rules .title_rules .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .rules .title_rules a {
-    font: 36px "GothamProLight", sans-serif;
-    color: #333;
-    text-transform: uppercase;
-    margin-bottom: 0; }
-.rules .rowPlayers, .rules .rowTime {
-  display: inline-block;
-  width: 100%;
-  margin-top: 25px;
-  font: 15px/20px "GothamProRegular", sans-serif;
-  color: #333; }
-  .rules .rowPlayers .left, .rules .rowTime .left {
-    padding-left: 0; }
-  .rules .rowPlayers .right, .rules .rowTime .right {
-    padding-right: 0; }
-  .rules .rowPlayers img, .rules .rowTime img {
-    margin-bottom: 7px; }
-.rules .rowTime {
-  display: inline-block;
-  width: 100%;
-  margin-top: 5px; }
+/*-------------------Section Rules And Accordion -----------------------*/
+.rules {
+  /*----Accordion -----*/ }
+  .rules .title_rules {
+    border-left: 3px solid #ebc339; }
+    .rules .title_rules p, .rules .title_rules .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .rules .title_rules a {
+      font: 36px "GothamProLight", sans-serif;
+      color: #333;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+  .rules .rowPlayers, .rules .rowTime {
+    display: inline-block;
+    width: 100%;
+    margin-top: 25px;
+    font: 15px/20px "GothamProRegular", sans-serif;
+    color: #333; }
+    .rules .rowPlayers .left, .rules .rowTime .left {
+      padding-left: 0; }
+    .rules .rowPlayers .right, .rules .rowTime .right {
+      padding-right: 0; }
+    .rules .rowPlayers img, .rules .rowTime img {
+      margin-bottom: 7px; }
+  .rules .rowTime {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px; }
+  .rules .panel-group .panel {
+    border: 0;
+    box-shadow: none; }
+    .rules .panel-group .panel .panel-heading {
+      padding: 0;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      border-top: 1px solid #f3f3f3;
+      border-bottom: 0;
+      background: #fff; }
+      .rules .panel-group .panel .panel-heading a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        font: 18px/48px "GothamProRegular", sans-serif;
+        color: #333; }
+      .rules .panel-group .panel .panel-heading .sprite_accordion {
+        display: inline-block;
+        float: right;
+        width: 20px;
+        height: 20px;
+        margin: 14px 14px 0 0;
+        background: url("../img/accordion/sprite_accordion.png") no-repeat top right; }
+    .rules .panel-group .panel .panel-heading#headingOne {
+      background: #ebc339; }
+      .rules .panel-group .panel .panel-heading#headingOne .sprite_accordion {
+        background-position: bottom; }
+    .rules .panel-group .panel .panel-body {
+      background: #f3f3f3; }
+  .rules .panel-group .panel-heading + .panel-collapse > .panel-body, .rules .panel-group .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: 0; }
 
-.accordion {
-  margin-bottom: 20px; }
-
-.accordion-group {
-  margin-bottom: 2px;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px; }
-
-.accordion-heading {
-  border-bottom: 0; }
-
-.accordion-heading .accordion-toggle {
-  display: block;
-  padding: 8px 15px; }
-
-.accordion-toggle {
-  cursor: pointer; }
-
-.accordion-inner {
-  padding: 9px 15px;
-  border-top: 1px solid #e5e5e5; }
-
+/*-------------------Section Write Letter -----------------------*/
 .write_letter {
   background: #ebc339;
   display: inline-block;

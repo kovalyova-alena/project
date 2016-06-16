@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "homepage": "https://github.com/kovalyova-alena/project",
+  "authors": [
+    "kovalyova-alena <kovalyova_alena@inbox.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.3",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
