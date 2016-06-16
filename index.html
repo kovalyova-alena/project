@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<script src="js/js.js"></script>
 
 	<title>KQ Квест-комната</title>
 </head>
@@ -74,73 +76,48 @@
 		</div>
 	</div>
 
-<div class="accordion" id="accordion">
-	<div class="accordion_group" >
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" href="#accordion1" data-parent="#accordion">
-				simple collapsible
-			</a>
-			<div class="sprite_accordion">
+	<div class="accordion" id="accordion2">
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+					Меню №1
+				</a>
+			</div>
+			<div id="collapseOne" class="accordion-body collapse in">
+				<div class="accordion-inner">
+					Жизнь нашу можно удобно сравнивать со своенравною рекою, на поверхности которой плавает чёлн, иногда укачиваемый тихоструйною волною, нередко же задержанный в своём движении мелью и разбиваемый о подводный камень. - Нужно ли упоминать, что сей утлый чёлн на рынке скоропреходящего времени есть не кто иной, как сам человек?<br>
+					Нет столь великой вещи, которую не превзошла бы величиною ещё большая. Нет вещи столь малой, в которую не вместилась бы ещё меньшая.
+				</div>
 			</div>
 		</div>
-		<div id="accordion1" class="accordion-body in collapse text-left">
-			Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Выбрать квест комнату
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+					Меню №2
+				</a>
+			</div>
+			<div id="collapseTwo" class="accordion-body collapse">
+				<div class="accordion-inner">
+					Если бы тени предметов зависели не от величины сих последних, а имели бы свой произвольный рост, то, может быть, вскоре не осталось бы на всём земном шаре ни одного светлого места.<br>
+					"Зачем, - говорит эгоист, - стану я работать для потомства, когда оно ровно ничего для меня не сделало?" - Несправедлив ты, безумец! Потомство сделало для тебя уже то, что ты, сближая прошедшее с настоящим и будущим, можешь по произволу считать себя: младенцем, юношей и старцем.
+				</div>
+			</div>
+		</div>
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+					Меню №3
+				</a>
+			</div>
+			<div id="collapseThree" class="accordion-body collapse">
+				<div class="accordion-inner">
+					Три дела, однажды начавши, трудно кончить: а) вкушать хорошую пищу; б) беседовать с возвратившимся из похода другом и в) чесать, где чешется.<br>
+					Если у тебя спрошено будет: что полезнее, солнце или месяц? - ответствуй: месяц. Ибо солнце светит днём, когда и без того светло; а месяц - ночью.
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="accordion_group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" href="#accordion2" data-parent="#accordion">
-				simple collapsible
-			</a>
-			<div class="sprite_accordion">
-			</div>
-		</div>
-		<div id="accordion2" class="accordion-body collapse text-left">
-			Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Выбрать квест комнату
-		</div>
-	</div>
-
-	<div class="accordion_group">
-		<div class="accordion-heading">
-			<a class="accordion-toggle" data-toggle="collapse" href="#accordion3" data-parent="#accordion">
-				simple collapsible
-			</a>
-			<div class="sprite_accordion">
-			</div>
-		</div>
-		<div id="accordion3" class="accordion-body collapse text-left">
-			Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Выбрать квест комнату
-		</div>
-	</div>
-</div>
-
-<!--
-	<div id="accordion">
-
-		<div class="text-center" id="FAQ1">
-			<button class="accordion_button" data-toggle="collapse" data-target="#accordion1" data-parent="#accordion">
- 				simple collapsible
-			</button>
-			<div id="accordion1" class="collapse text-left">
-				Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Выбрать квест комнату
-			</div>
-		</div>
-
-
-			<div class="text-center" id="FAQ2">
-			<button class="accordion_button collapse_active" data-toggle="collapse" data-target="#accordion2" data-parent="#accordion">
- 				simple collapsible
-			</button>
-			<div id="accordion2" class="collapse in text-left">
-				Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Выбрать квест комнату
-			</div>
-		</div>
-
-		</div>
-
-		</div>
--->
 </section>
 
 

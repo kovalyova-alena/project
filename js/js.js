@@ -14,6 +14,7 @@ $(document).on('ready', function() {
             }
             });
     });
+    $(".collapse").collapse();
 
 
     $(".fancybox")
@@ -22,5 +23,5 @@ $(document).on('ready', function() {
             padding : 7
         });
 
-   
+
 });
