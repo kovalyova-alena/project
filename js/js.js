@@ -22,5 +22,5 @@ $(document).on('ready', function() {
             padding : 7
         });
 
-    $(".collapse").collapse()
+   
 });
