@@ -6183,6 +6183,9 @@ a:focus {
     .thanks .rowThanks h1 {
       font: 36px "GothamProBlack", sans-serif;
       text-transform: uppercase; }
+      @media (max-width: 767px) {
+        .thanks .rowThanks h1 {
+          font-size: 28px; } }
     .thanks .rowThanks p, .thanks .rowThanks .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .thanks .rowThanks a {
       font: 15px/20px "GothamProRegular", sans-serif;
       text-transform: none;
@@ -6209,7 +6212,8 @@ a:focus {
     @media (max-width: 767px) {
       .thanks .rowButtons .right_button {
         text-align: center;
-        margin-top: 40px; } }
+        margin-top: 40px;
+        margin-bottom: 20px; } }
     .thanks .rowButtons .right_button .return {
       border: 2px solid #f3f3f3;
       border-radius: 7px;
