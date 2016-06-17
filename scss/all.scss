@@ -342,8 +342,8 @@ section.contacts {
 .pick_room {
 	@include inline-block;
 	background: $color-white;
-	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-top: 6%;
+	padding-bottom: 8%;
 	.room_title {
 		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey);
 	}
@@ -358,9 +358,6 @@ section.contacts {
 				background: url("../img/our-rooms/laboratory.jpg") top;
 				&:hover {
 					background-position: bottom;
-				}
-				@media (min-width: $screen-lg-min) {
-					margin: 0 auto;
 				}
 			}
 		}
@@ -398,6 +395,9 @@ section.contacts {
 		}
 		.right {
 			padding-right: 0;
+			@media (max-width: $screen-xs-max) {
+				padding-left: 0;
+			}
 		}
 		img {
 			margin-bottom: 7px;
@@ -429,6 +429,9 @@ section.contacts {
 					text-decoration: none;
 					font: 18px/48px $font-GothamReg, sans-serif;
 					color: $text-dark-grey;
+					@media (max-width: 470px) {
+						line-height: 24px;
+					}
 				}
 				.sprite_accordion {
 					display: inline-block;

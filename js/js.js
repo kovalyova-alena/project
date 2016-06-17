@@ -1,8 +1,7 @@
 $(document).on('ready', function() {
 
     /*----------------Accordion -------------------*/
-
-    $('div.panel-heading').on('click', function(e) {
+       $('div.panel-heading').on('click', function(e) {
         var currentId = $(this).attr('id');
         $(".sprite_accordion").css('background-position', 'top');
         $("#" + currentId +" "+".sprite_accordion").css('background-position', 'bottom');

@@ -6071,8 +6071,8 @@ section.contacts {
   display: inline-block;
   width: 100%;
   background: #fff;
-  padding-top: 90px;
-  padding-bottom: 90px; }
+  padding-top: 6%;
+  padding-bottom: 8%; }
   .pick_room .room_title {
     border-left: 3px solid #ebc339; }
     .pick_room .room_title p, .pick_room .room_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .pick_room .room_title a {
@@ -6092,9 +6092,6 @@ section.contacts {
         background: url("../img/our-rooms/laboratory.jpg") top; }
         .pick_room .rowRooms .left_laboratory .laboratory:hover {
           background-position: bottom; }
-        @media (min-width: 1200px) {
-          .pick_room .rowRooms .left_laboratory .laboratory {
-            margin: 0 auto; } }
     @media (max-width: 991px) {
       .pick_room .rowRooms .right_kruger {
         padding-left: 0;
@@ -6126,6 +6123,9 @@ section.contacts {
       padding-left: 0; }
     .rules .rowPlayers .right, .rules .rowTime .right {
       padding-right: 0; }
+      @media (max-width: 767px) {
+        .rules .rowPlayers .right, .rules .rowTime .right {
+          padding-left: 0; } }
     .rules .rowPlayers img, .rules .rowTime img {
       margin-bottom: 7px; }
   .rules .rowTime {
@@ -6152,6 +6152,9 @@ section.contacts {
           text-decoration: none;
           font: 18px/48px "GothamProRegular", sans-serif;
           color: #333; }
+          @media (max-width: 470px) {
+            .rules .panel-group .panel .panel-heading a {
+              line-height: 24px; } }
         .rules .panel-group .panel .panel-heading .sprite_accordion {
           display: inline-block;
           float: right;
