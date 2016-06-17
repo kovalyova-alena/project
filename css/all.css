@@ -5765,64 +5765,239 @@ button.close {
 a:focus {
   outline: none; }
 
-/*-------------------Section Contacts -----------------------*/
-section.contacts {
-  margin-top: 5%;
+/*-------------------Section Pick Rooms -----------------------*/
+.pick_room {
   display: inline-block;
-  width: 100%; }
-  section.contacts p, section.contacts .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts a {
-    margin: 0; }
-  section.contacts .rowTitle {
-    display: inline-block;
-    width: 100%; }
-    section.contacts .rowTitle .contact {
-      border-left: 4px solid #ebc339;
-      font: 36px/48px "GothamProBlack", sans-serif;
-      color: #333; }
-      @media (max-width: 767px) {
-        section.contacts .rowTitle .contact {
-          font-size: 24px;
-          text-align: center;
-          border: 0; } }
-      section.contacts .rowTitle .contact p, section.contacts .rowTitle .contact .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowTitle .contact a {
-        text-transform: uppercase; }
-    section.contacts .rowTitle .button_letter {
-      margin-top: 17px; }
-      section.contacts .rowTitle .button_letter a {
-        border: 2px solid #ebc339;
-        border-radius: 7px;
-        color: #272727;
-        background: #ebc339;
-        padding: 16px 26px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font: 13px/13px 'GothamProBold', sans-serif; }
-      @media (max-width: 767px) {
-        section.contacts .rowTitle .button_letter {
-          text-align: center; } }
-  section.contacts .rowContacts {
+  width: 100%;
+  background: #fff;
+  padding-top: 6%;
+  padding-bottom: 8%; }
+  .pick_room .room_title {
+    border-left: 3px solid #ebc339; }
+    .pick_room .room_title p, .pick_room .room_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .pick_room .room_title a {
+      font: 36px "GothamProLight", sans-serif;
+      color: #333;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .pick_room .room_title {
+        border-left: 3px solid #ebc339; }
+        .pick_room .room_title p, .pick_room .room_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .pick_room .room_title a {
+          font: 24px "GothamProLight", sans-serif;
+          color: #333;
+          text-transform: uppercase;
+          margin-bottom: 0; } }
+  .pick_room .rowRooms {
     display: inline-block;
     width: 100%;
-    margin-top: 40px;
-    margin-bottom: 6%; }
+    margin-top: 30px; }
+    .pick_room .rowRooms .left_laboratory {
+      padding-left: 0; }
+      .pick_room .rowRooms .left_laboratory .laboratory {
+        min-width: 320px;
+        height: 250px;
+        background: url("../img/our-rooms/laboratory.jpg") no-repeat top; }
+        .pick_room .rowRooms .left_laboratory .laboratory:hover {
+          background-position: bottom; }
+    @media (max-width: 991px) {
+      .pick_room .rowRooms .right_kruger {
+        padding-left: 0;
+        margin-top: 20px; } }
+    .pick_room .rowRooms .right_kruger .kruger {
+      min-width: 320px;
+      height: 250px;
+      background: url("../img/our-rooms/kruger.jpg") no-repeat top; }
+      .pick_room .rowRooms .right_kruger .kruger:hover {
+        background-position: bottom; }
+
+/*-------------------Section Rules And Accordion -----------------------*/
+.rules {
+  /*----Accordion -----*/ }
+  .rules .title_rules {
+    border-left: 3px solid #ebc339; }
+    .rules .title_rules p, .rules .title_rules .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .rules .title_rules a {
+      font: 36px "GothamProLight", sans-serif;
+      color: #333;
+      text-transform: uppercase;
+      margin-bottom: 0; }
     @media (max-width: 767px) {
-      section.contacts .rowContacts .title_contacts {
-        padding-top: 10px; } }
-    section.contacts .rowContacts .title_contacts p, section.contacts .rowContacts .title_contacts .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .title_contacts a {
-      font: 13px/20px "GothamProRegular", sans-serif;
-      color: #999; }
-    section.contacts .rowContacts .adress p, section.contacts .rowContacts .phone p, section.contacts .rowContacts .adress .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .adress a, section.contacts .rowContacts .phone .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .phone a {
-      font: 15px/24px "GothamProRegular", sans-serif;
-      color: #333; }
-    section.contacts .rowContacts .email {
-      font: 15px/24px "GothamProRegular", sans-serif; }
-      @media (min-width: 768px) and (max-width: 776px) {
-        section.contacts .rowContacts .email {
-          margin-left: -5px; } }
-      section.contacts .rowContacts .email a {
-        color: #4c82d9;
-        text-decoration: none;
-        cursor: pointer; }
+      .rules .title_rules {
+        border-left: 3px solid #ebc339; }
+        .rules .title_rules p, .rules .title_rules .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .rules .title_rules a {
+          font: 24px "GothamProLight", sans-serif;
+          color: #333;
+          text-transform: uppercase;
+          margin-bottom: 0; } }
+  .rules .rowPlayers, .rules .rowTime {
+    display: inline-block;
+    width: 100%;
+    margin-top: 25px;
+    font: 15px/20px "GothamProRegular", sans-serif;
+    color: #333; }
+    .rules .rowPlayers .left, .rules .rowTime .left {
+      padding-left: 0; }
+    .rules .rowPlayers .right, .rules .rowTime .right {
+      padding-right: 0; }
+      @media (max-width: 767px) {
+        .rules .rowPlayers .right, .rules .rowTime .right {
+          padding-left: 0; } }
+    .rules .rowPlayers img, .rules .rowTime img {
+      margin-bottom: 7px; }
+  .rules .rowTime {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px; }
+  .rules .panel-group {
+    margin-bottom: 7%;
+    margin-top: 3%; }
+    .rules .panel-group .panel {
+      border: 0;
+      box-shadow: none;
+      margin-top: 0; }
+      .rules .panel-group .panel .panel-heading {
+        padding: 0 0 0 30px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top: 1px solid #f3f3f3;
+        border-bottom: 0;
+        background: #fff; }
+        .rules .panel-group .panel .panel-heading a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          font: 18px/48px "GothamProRegular", sans-serif;
+          color: #333; }
+          @media (max-width: 470px) {
+            .rules .panel-group .panel .panel-heading a {
+              line-height: 24px; } }
+        .rules .panel-group .panel .panel-heading .sprite_accordion {
+          display: inline-block;
+          float: right;
+          width: 20px;
+          height: 20px;
+          margin: 14px 14px 0 0;
+          background: url("../img/accordion/sprite_accordion.png") no-repeat top right; }
+      .rules .panel-group .panel .panel-heading#headingOne {
+        background: #ebc339; }
+        .rules .panel-group .panel .panel-heading#headingOne .sprite_accordion {
+          background-position: bottom; }
+      .rules .panel-group .panel .panel-heading#headingFour {
+        border-bottom: 1px solid #f3f3f3; }
+      .rules .panel-group .panel .panel-body {
+        background: #f3f3f3;
+        font: 15px/20px "GothamProRegular", sans-serif;
+        padding: 15px 15px 15px 30px; }
+        .rules .panel-group .panel .panel-body a {
+          border-bottom: 1px solid #d1daed;
+          text-decoration: none; }
+    .rules .panel-group .panel-heading + .panel-collapse > .panel-body, .rules .panel-group .panel-group .panel-heading + .panel-collapse > .list-group {
+      border-top: 0; }
+
+/*-------------------Section Write Letter -----------------------*/
+.write_letter {
+  background: #ebc339;
+  display: inline-block;
+  width: 100%; }
+  .write_letter .questions {
+    color: #333;
+    margin: 5% 0; }
+    @media (max-width: 991px) {
+      .write_letter .questions {
+        text-align: center; } }
+    .write_letter .questions h2 {
+      font: 36px "GothamProLight", sans-serif;
+      text-transform: uppercase; }
+      @media (max-width: 767px) {
+        .write_letter .questions h2 {
+          font-size: 20px; } }
+    .write_letter .questions p, .write_letter .questions .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .write_letter .questions a {
+      font: 15px/20px "GothamProRegular", sans-serif;
+      margin-top: 15px; }
+      .write_letter .questions p span, .write_letter .questions .popUp .content_modal .confidentiality p a span, .popUp .content_modal .confidentiality p .write_letter .questions a span {
+        font-family: "GothamProBold"; }
+  .write_letter .button_write {
+    margin-top: 10%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .write_letter .button_write {
+        margin-top: 11%; } }
+    @media (max-width: 991px) {
+      .write_letter .button_write {
+        margin-top: 3%;
+        padding-bottom: 7%; } }
+    .write_letter .button_write a {
+      border: 2px solid #262626;
+      border-radius: 7px;
+      color: #272727;
+      background: #ebc339;
+      padding: 16px 26px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font: 13px/13px 'GothamProBold', sans-serif; }
+      .write_letter .button_write a:hover {
+        background-color: #333;
+        color: #ebc339; }
+
+/*-------------------Section Gallery -----------------------*/
+.gallery {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .gallery .photos_title {
+    border-left: 3px solid #ebc339; }
+    .gallery .photos_title p, .gallery .photos_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .gallery .photos_title a {
+      font: 36px "GothamProBlack", sans-serif;
+      color: #333;
+      text-transform: none;
+      margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .gallery .photos_title {
+        border-left: 3px solid #ebc339; }
+        .gallery .photos_title p, .gallery .photos_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .gallery .photos_title a {
+          font: 24px "GothamProBlack", sans-serif;
+          color: #333;
+          text-transform: none;
+          margin-bottom: 0; } }
+  .gallery .rowPhotos {
+    display: inline-block;
+    width: 100%; }
+    .gallery .rowPhotos img {
+      width: 100%;
+      margin-top: 30px; }
+
+/*-------------------Section reviews -----------------------*/
+.people_say {
+  display: inline-block;
+  width: 100%;
+  background: #f3f3f3;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .people_say .people_title {
+    border-left: 3px solid #ebc339;
+    border-left: 3px solid #ebc339; }
+    .people_say .people_title p, .people_say .people_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .people_say .people_title a {
+      font: 36px "GothamProBlack", sans-serif;
+      color: #333;
+      text-transform: none;
+      margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .people_say .people_title {
+        border-left: 3px solid #ebc339; }
+        .people_say .people_title p, .people_say .people_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .people_say .people_title a {
+          font: 24px "GothamProBlack", sans-serif;
+          color: #333;
+          text-transform: none;
+          margin-bottom: 0; } }
+  .people_say .more {
+    border: 2px solid #ebc339;
+    border-radius: 7px;
+    color: #272727;
+    background: #ebc339;
+    padding: 16px 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 13px/13px 'GothamProBold', sans-serif; }
 
 /*-------------------Modal -----------------------*/
 .popUp {
@@ -6028,198 +6203,63 @@ section.contacts {
       text-transform: uppercase;
       font: 13px/13px 'GothamProBold', sans-serif; }
 
-/*-------------------Section Gallery -----------------------*/
-.gallery {
-  display: inline-block;
-  width: 100%;
-  background: #fff;
-  margin-top: 100px;
-  margin-bottom: 100px; }
-  .gallery .photos_title {
-    border-left: 3px solid #ebc339; }
-    .gallery .photos_title p, .gallery .photos_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .gallery .photos_title a {
-      font: 36px "GothamProBlack", sans-serif;
-      color: #333; }
-  .gallery .rowPhotos {
-    display: inline-block;
-    width: 100%; }
-    .gallery .rowPhotos img {
-      width: 100%;
-      margin-top: 30px; }
-
-/*-------------------Section reviews -----------------------*/
-.people_say {
-  display: inline-block;
-  width: 100%;
-  background: #f3f3f3;
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .people_say .people_title {
-    border-left: 3px solid #ebc339; }
-    .people_say .people_title p, .people_say .people_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .people_say .people_title a {
-      font: 36px "GothamProBlack", sans-serif;
-      color: #333; }
-  .people_say .more {
-    border: 2px solid #ebc339;
-    border-radius: 7px;
-    color: #272727;
-    background: #ebc339;
-    padding: 16px 26px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font: 13px/13px 'GothamProBold', sans-serif; }
-
-/*-------------------Section Pick Rooms -----------------------*/
-.pick_room {
-  display: inline-block;
-  width: 100%;
-  background: #fff;
-  padding-top: 6%;
-  padding-bottom: 8%; }
-  .pick_room .room_title {
-    border-left: 3px solid #ebc339; }
-    .pick_room .room_title p, .pick_room .room_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .pick_room .room_title a {
-      font: 36px "GothamProLight", sans-serif;
-      color: #333;
-      text-transform: uppercase;
-      margin-bottom: 0; }
-  .pick_room .rowRooms {
-    display: inline-block;
-    width: 100%;
-    margin-top: 30px; }
-    .pick_room .rowRooms .left_laboratory {
-      padding-left: 0; }
-      .pick_room .rowRooms .left_laboratory .laboratory {
-        width: 460px;
-        height: 250px;
-        background: url("../img/our-rooms/laboratory.jpg") top; }
-        .pick_room .rowRooms .left_laboratory .laboratory:hover {
-          background-position: bottom; }
-    @media (max-width: 991px) {
-      .pick_room .rowRooms .right_kruger {
-        padding-left: 0;
-        margin-top: 20px; } }
-    .pick_room .rowRooms .right_kruger .kruger {
-      width: 460px;
-      height: 250px;
-      background: url("../img/our-rooms/kruger.jpg") top; }
-      .pick_room .rowRooms .right_kruger .kruger:hover {
-        background-position: bottom; }
-
-/*-------------------Section Rules And Accordion -----------------------*/
-.rules {
-  /*----Accordion -----*/ }
-  .rules .title_rules {
-    border-left: 3px solid #ebc339; }
-    .rules .title_rules p, .rules .title_rules .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .rules .title_rules a {
-      font: 36px "GothamProLight", sans-serif;
-      color: #333;
-      text-transform: uppercase;
-      margin-bottom: 0; }
-  .rules .rowPlayers, .rules .rowTime {
-    display: inline-block;
-    width: 100%;
-    margin-top: 25px;
-    font: 15px/20px "GothamProRegular", sans-serif;
-    color: #333; }
-    .rules .rowPlayers .left, .rules .rowTime .left {
-      padding-left: 0; }
-    .rules .rowPlayers .right, .rules .rowTime .right {
-      padding-right: 0; }
-      @media (max-width: 767px) {
-        .rules .rowPlayers .right, .rules .rowTime .right {
-          padding-left: 0; } }
-    .rules .rowPlayers img, .rules .rowTime img {
-      margin-bottom: 7px; }
-  .rules .rowTime {
-    display: inline-block;
-    width: 100%;
-    margin-top: 5px; }
-  .rules .panel-group {
-    margin-bottom: 7%;
-    margin-top: 3%; }
-    .rules .panel-group .panel {
-      border: 0;
-      box-shadow: none;
-      margin-top: 0; }
-      .rules .panel-group .panel .panel-heading {
-        padding: 0 0 0 30px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        border-top: 1px solid #f3f3f3;
-        border-bottom: 0;
-        background: #fff; }
-        .rules .panel-group .panel .panel-heading a {
-          display: inline-block;
-          width: 100%;
-          text-decoration: none;
-          font: 18px/48px "GothamProRegular", sans-serif;
-          color: #333; }
-          @media (max-width: 470px) {
-            .rules .panel-group .panel .panel-heading a {
-              line-height: 24px; } }
-        .rules .panel-group .panel .panel-heading .sprite_accordion {
-          display: inline-block;
-          float: right;
-          width: 20px;
-          height: 20px;
-          margin: 14px 14px 0 0;
-          background: url("../img/accordion/sprite_accordion.png") no-repeat top right; }
-      .rules .panel-group .panel .panel-heading#headingOne {
-        background: #ebc339; }
-        .rules .panel-group .panel .panel-heading#headingOne .sprite_accordion {
-          background-position: bottom; }
-      .rules .panel-group .panel .panel-heading#headingFour {
-        border-bottom: 1px solid #f3f3f3; }
-      .rules .panel-group .panel .panel-body {
-        background: #f3f3f3;
-        font: 15px/20px "GothamProRegular", sans-serif;
-        padding: 15px 15px 15px 30px; }
-        .rules .panel-group .panel .panel-body a {
-          border-bottom: 1px solid #d1daed;
-          text-decoration: none; }
-    .rules .panel-group .panel-heading + .panel-collapse > .panel-body, .rules .panel-group .panel-group .panel-heading + .panel-collapse > .list-group {
-      border-top: 0; }
-
-/*-------------------Section Write Letter -----------------------*/
-.write_letter {
-  background: #ebc339;
+/*-------------------Section Contacts -----------------------*/
+section.contacts {
+  margin-top: 5%;
   display: inline-block;
   width: 100%; }
-  .write_letter .questions {
-    color: #333;
-    margin: 5% 0; }
-    @media (max-width: 991px) {
-      .write_letter .questions {
-        text-align: center; } }
-    .write_letter .questions h2 {
-      font: 36px "GothamProLight", sans-serif;
-      text-transform: uppercase; }
-    .write_letter .questions p, .write_letter .questions .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .write_letter .questions a {
-      font: 15px/20px "GothamProRegular", sans-serif;
-      margin-top: 15px; }
-      .write_letter .questions p span, .write_letter .questions .popUp .content_modal .confidentiality p a span, .popUp .content_modal .confidentiality p .write_letter .questions a span {
-        font-family: "GothamProBold"; }
-  .write_letter .button_write {
-    margin-top: 10%; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .write_letter .button_write {
-        margin-top: 11%; } }
-    @media (max-width: 991px) {
-      .write_letter .button_write {
-        margin-top: 3%;
-        padding-bottom: 7%; } }
-    .write_letter .button_write a {
-      border: 2px solid #262626;
-      border-radius: 7px;
-      color: #272727;
-      background: #ebc339;
-      padding: 16px 26px;
-      text-decoration: none;
-      text-transform: uppercase;
-      font: 13px/13px 'GothamProBold', sans-serif; }
-      .write_letter .button_write a:hover {
-        background-color: #333;
-        color: #ebc339; }
+  section.contacts p, section.contacts .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts a {
+    margin: 0; }
+  section.contacts .rowTitle {
+    display: inline-block;
+    width: 100%; }
+    section.contacts .rowTitle .contact {
+      border-left: 4px solid #ebc339;
+      font: 36px/48px "GothamProBlack", sans-serif;
+      color: #333; }
+      @media (max-width: 767px) {
+        section.contacts .rowTitle .contact {
+          font-size: 24px;
+          text-align: center;
+          border: 0; } }
+      section.contacts .rowTitle .contact p, section.contacts .rowTitle .contact .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowTitle .contact a {
+        text-transform: uppercase; }
+    section.contacts .rowTitle .button_letter {
+      margin-top: 17px; }
+      section.contacts .rowTitle .button_letter a {
+        border: 2px solid #ebc339;
+        border-radius: 7px;
+        color: #272727;
+        background: #ebc339;
+        padding: 16px 26px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 13px/13px 'GothamProBold', sans-serif; }
+      @media (max-width: 767px) {
+        section.contacts .rowTitle .button_letter {
+          text-align: center; } }
+  section.contacts .rowContacts {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 6%; }
+    @media (max-width: 767px) {
+      section.contacts .rowContacts .title_contacts {
+        padding-top: 10px; } }
+    section.contacts .rowContacts .title_contacts p, section.contacts .rowContacts .title_contacts .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .title_contacts a {
+      font: 13px/20px "GothamProRegular", sans-serif;
+      color: #999; }
+    section.contacts .rowContacts .adress p, section.contacts .rowContacts .phone p, section.contacts .rowContacts .adress .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .adress a, section.contacts .rowContacts .phone .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p section.contacts .rowContacts .phone a {
+      font: 15px/24px "GothamProRegular", sans-serif;
+      color: #333; }
+    section.contacts .rowContacts .email {
+      font: 15px/24px "GothamProRegular", sans-serif; }
+      @media (min-width: 768px) and (max-width: 776px) {
+        section.contacts .rowContacts .email {
+          margin-left: -5px; } }
+      section.contacts .rowContacts .email a {
+        color: #4c82d9;
+        text-decoration: none;
+        cursor: pointer; }
 
 /*# sourceMappingURL=all.css.map */

@@ -3,78 +3,231 @@ a:focus {
 	outline: none;
 }
 
+
+
 header {
 
 }
 
-/*-------------------Section Contacts -----------------------*/
-section.contacts {
-	margin-top: 5%;
+/*-------------------Section Pick Rooms -----------------------*/
+.pick_room {
 	@include inline-block;
-	p {
-		margin:0;
-	}
-	.rowTitle {
-		@include inline-block;
-		.contact {
-			border-left: 4px solid $color-yellow;
-			font: 36px/48px $font-GothamBlack, sans-serif;
-			color: $color-dark-grey; 
-			@media (max-width: $screen-xs-max) {
-				font-size: 24px;
-				text-align: center;
-				border: 0;
-			}
-			p {
-				text-transform: $text-transform-up;
-			}
-		}
-		.button_letter {
-			margin-top: 17px;
-			a {
-			@include button($color-yellow,$color-yellow,
-			 $text-button, 7px,  $text-transform-up);
-			}	
-			@media (max-width: $screen-xs-max) {
-				text-align: center;
-			}
+	background: $color-white;
+	padding-top: 6%;
+	padding-bottom: 8%;
+	.room_title {
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
+		@media (max-width: $screen-xs-max) {
+			@include name-section(3px, $color-yellow, 24px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		}
 	}
-	.rowContacts {
+	.rowRooms {
 		@include inline-block;
-		margin-top: 40px;
-		margin-bottom: 6%;
-		.title_contacts {
+		margin-top: 30px;
+		.left_laboratory {
+			padding-left: 0;
+			.laboratory{
+				min-width: 320px;
+				height: 250px;
+				background: url("../img/our-rooms/laboratory.jpg") no-repeat top;
+				&:hover {
+					background-position: bottom;
+				}
+			}
+		}
+		.right_kruger {
+			@media (max-width: $screen-sm-max) {
+				padding-left: 0;
+				margin-top: 20px;
+			}
+			.kruger {
+				min-width: 320px;
+				height: 250px;
+				background: url("../img/our-rooms/kruger.jpg") no-repeat top;
+				&:hover {
+					background-position: bottom;
+				}
+			}
+		}
+
+	}
+}
+
+
+/*-------------------Section Rules And Accordion -----------------------*/
+.rules {
+	.title_rules {
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
+		@media (max-width: $screen-xs-max) {
+			@include name-section(3px, $color-yellow, 24px, $font-GothamLight, $text-dark-grey, $text-transform-up);
+		}
+	}
+	.rowPlayers {
+		@include inline-block;
+		margin-top: 25px;
+		font: 15px/20px $font-GothamReg, sans-serif;
+		color: $text-dark-grey;
+		.left {
+			padding-left: 0;
+		}
+		.right {
+			padding-right: 0;
 			@media (max-width: $screen-xs-max) {
-				padding-top:10px;
+				padding-left: 0;
 			}
-			p {
-				font: 13px/20px $font-GothamReg, sans-serif;
-				color: $text-grey;
-			  }
 		}
-		.adress{
-			p{
-				font: 15px/24px $font-GothamReg, sans-serif;
-					color: $text-dark-grey;	
+		img {
+			margin-bottom: 7px;
+		}
+	}
+	.rowTime {
+		@include  inline-block;
+		@extend .rowPlayers;
+		margin-top: 5px;
+	}
+
+	/*----Accordion -----*/
+	.panel-group {
+		margin-bottom: 7%;
+		margin-top: 3%;
+		.panel {
+			border: 0;
+			box-shadow: none;
+			margin-top: 0;
+			.panel-heading {
+				padding: 0 0 0 30px;
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+				border-top: 1px solid $color-grey;
+				border-bottom: 0;
+				background: #fff;
+				a {
+					@include inline-block;
+					text-decoration: none;
+					font: 18px/48px $font-GothamReg, sans-serif;
+					color: $text-dark-grey;
+					@media (max-width: 470px) {
+						line-height: 24px;
+					}
+				}
+				.sprite_accordion {
+					display: inline-block;
+					float: right;
+					width: 20px;
+					height: 20px;
+					margin: 14px 14px 0 0;
+					background: url('../img/accordion/sprite_accordion.png') no-repeat top right;
+				}
+
 			}
-				
-		}
-		.phone {
-			@extend .adress;
-		}
-		.email {
-			font: 15px/24px $font-GothamReg, sans-serif;
-			@media (min-width: $screen-sm-min) and (max-width: 776px) {
-				margin-left: -5px;
+			.panel-heading#headingOne {
+				background: $color-yellow;
+				.sprite_accordion {
+					background-position: bottom;
+				}
 			}
-			a {
-				color: $text-blue;
-				text-decoration: none;
-				cursor: pointer;
+			.panel-heading#headingFour {
+				border-bottom: 1px solid #f3f3f3;
 			}
-			
+			.panel-body {
+				background: $color-grey;
+				font: 15px/20px $font-GothamReg, sans-serif;
+				padding: 15px 15px 15px 30px;
+				a {
+					border-bottom: 1px solid #d1daed;
+					text-decoration: none;
+				}
+			}
 		}
+		.panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+			border-top: 0;
+		}
+	}
+}
+
+/*-------------------Section Write Letter -----------------------*/
+.write_letter {
+	background: $color-yellow;
+	@include inline-block;
+	.questions {
+		color: $text-dark-grey;
+		margin: 5% 0;
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+		}
+		h2 {
+			font: 36px $font-GothamLight, sans-serif;
+			@media (max-width: $screen-xs-max) {
+				font-size: 20px;
+			}
+			text-transform: $text-transform-up;
+		}
+		p {
+			font: 15px/20px $font-GothamReg, sans-serif;
+			margin-top: 15px;
+			span {
+				font-family: $font-GothamBold;
+			}
+		};
+	}
+	.button_write {
+		margin-top: 10%;
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+			margin-top: 11%;
+		}
+		@media (max-width: $screen-sm-max) {
+			margin-top: 3%;
+			padding-bottom: 7%;
+		}
+
+		a {
+			@include button($color-yellow, $color-border-button, $text-button, 7px, $text-transform-up);
+			&:hover {
+				background-color: $color-dark-grey;
+				color: $color-yellow;
+			}
+		}
+	}
+}
+
+
+/*-------------------Section Gallery -----------------------*/
+.gallery {
+	@include inline-block;
+	background: $color-white;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	.photos_title {
+		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
+		@media (max-width: $screen-xs-max) {
+			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+		}
+	}
+	.rowPhotos {
+
+		@include inline-block;
+		img {
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
+}
+
+/*-------------------Section reviews -----------------------*/
+.people_say {
+	@include inline-block;
+	background: $color-grey;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.people_title {
+		border-left: 3px solid $color-yellow;
+		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
+		@media (max-width: $screen-xs-max) {
+			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+		}
+	}
+	.more {
+		@include button($color-yellow, $color-yellow, $text-button, 7px, $text-transform-up);
 	}
 }
 
@@ -250,6 +403,7 @@ section.contacts {
 		margin-top: 7% !important;
 	}
 
+
 /*--------------- Thanks Page -----------------------*/
 
 .thanks {
@@ -299,223 +453,77 @@ section.contacts {
 	}
 }
 
-/*-------------------Section Gallery -----------------------*/
-.gallery {
+
+
+
+
+/*-------------------Section Contacts -----------------------*/
+section.contacts {
+	margin-top: 5%;
 	@include inline-block;
-	background: $color-white;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	.photos_title {
-		border-left: 3px solid $color-yellow;
-		p {
-			font: 36px $font-GothamBlack, sans-serif;
+	p {
+		margin:0;
+	}
+	.rowTitle {
+		@include inline-block;
+		.contact {
+			border-left: 4px solid $color-yellow;
+			font: 36px/48px $font-GothamBlack, sans-serif;
 			color: $color-dark-grey;
-		}
-	}
-	.rowPhotos {
-
-		@include inline-block;
-		img {
-			width: 100%;
-			margin-top: 30px;
-		}
-	}
-}
-
-/*-------------------Section reviews -----------------------*/
-.people_say {
-	@include inline-block;
-	background: $color-grey;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	.people_title {
-		border-left: 3px solid $color-yellow;
-		p {
-			font: 36px $font-GothamBlack, sans-serif;
-			color: $color-dark-grey;
-		}
-	}
-	.more {
-		@include button($color-yellow, $color-yellow, $text-button, 7px, $text-transform-up);
-	}
-}
-
-/*-------------------Section Pick Rooms -----------------------*/
-.pick_room {
-	@include inline-block;
-	background: $color-white;
-	padding-top: 6%;
-	padding-bottom: 8%;
-	.room_title {
-		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey);
-	}
-	.rowRooms {
-		@include inline-block;
-		margin-top: 30px;
-		.left_laboratory {
-			padding-left: 0;
-			.laboratory{
-				width: 460px;
-				height: 250px;
-				background: url("../img/our-rooms/laboratory.jpg") top;
-				&:hover {
-					background-position: bottom;
-				}
-			}
-		}
-		.right_kruger {
-			@media (max-width: $screen-sm-max) {
-				padding-left: 0;
-				margin-top: 20px;
-			}
-			.kruger {
-				width: 460px;
-				height: 250px;
-				background: url("../img/our-rooms/kruger.jpg") top;
-				&:hover {
-					background-position: bottom;
-				}
-			}
-		}
-
-	}
-}
-
-
-/*-------------------Section Rules And Accordion -----------------------*/
-.rules {
-	.title_rules {
-		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey);
-	}
-	.rowPlayers {
-		@include inline-block;
-		margin-top: 25px;
-		font: 15px/20px $font-GothamReg, sans-serif;
-		color: $text-dark-grey;
-		.left {
-			padding-left: 0;
-		}
-		.right {
-			padding-right: 0;
 			@media (max-width: $screen-xs-max) {
-				padding-left: 0;
+				font-size: 24px;
+				text-align: center;
+				border: 0;
+			}
+			p {
+				text-transform: $text-transform-up;
 			}
 		}
-		img {
-			margin-bottom: 7px;
+		.button_letter {
+			margin-top: 17px;
+			a {
+				@include button($color-yellow,$color-yellow,
+								$text-button, 7px,  $text-transform-up);
+			}
+			@media (max-width: $screen-xs-max) {
+				text-align: center;
+			}
 		}
 	}
-	.rowTime {
-		@include  inline-block;
-		@extend .rowPlayers;
-		margin-top: 5px;
-	}
-
-	/*----Accordion -----*/
-	.panel-group {
-		margin-bottom: 7%;
-		margin-top: 3%;
-		.panel {
-			border: 0;
-			box-shadow: none;
-			margin-top: 0;
-			.panel-heading {
-				padding: 0 0 0 30px;
-				border-top-right-radius: 0;
-				border-top-left-radius: 0;
-				border-top: 1px solid $color-grey;
-				border-bottom: 0;
-				background: #fff;
-				a {
-					@include inline-block;
-					text-decoration: none;
-					font: 18px/48px $font-GothamReg, sans-serif;
-					color: $text-dark-grey;
-					@media (max-width: 470px) {
-						line-height: 24px;
-					}
-				}
-				.sprite_accordion {
-					display: inline-block;
-					float: right;
-					width: 20px;
-					height: 20px;
-					margin: 14px 14px 0 0;
-					background: url('../img/accordion/sprite_accordion.png') no-repeat top right;
-				}
-
+	.rowContacts {
+		@include inline-block;
+		margin-top: 40px;
+		margin-bottom: 6%;
+		.title_contacts {
+			@media (max-width: $screen-xs-max) {
+				padding-top:10px;
 			}
-			.panel-heading#headingOne {
-				background: $color-yellow;
-				.sprite_accordion {
-					background-position: bottom;
-				}
+			p {
+				font: 13px/20px $font-GothamReg, sans-serif;
+				color: $text-grey;
 			}
-			.panel-heading#headingFour {
-				border-bottom: 1px solid #f3f3f3;
+		}
+		.adress{
+			p{
+				font: 15px/24px $font-GothamReg, sans-serif;
+				color: $text-dark-grey;
 			}
-			.panel-body {
-				background: $color-grey;
-				font: 15px/20px $font-GothamReg, sans-serif;
-				padding: 15px 15px 15px 30px;
-				a {
-					border-bottom: 1px solid #d1daed;
-					text-decoration: none;
-				}
-				}
+
 		}
-		.panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
-			border-top: 0;
+		.phone {
+			@extend .adress;
 		}
-	}
-
-}
-
-
-
-
-
-
-/*-------------------Section Write Letter -----------------------*/
-.write_letter {
-	background: $color-yellow;
-	@include inline-block;
-	.questions {
-		color: $text-dark-grey;
-		margin: 5% 0;
-		@media (max-width: $screen-sm-max) {
-			text-align: center;
-		}
-		h2 {
-			font: 36px $font-GothamLight, sans-serif;
-			text-transform: $text-transform-up;
-		}
-		p {
-			font: 15px/20px $font-GothamReg, sans-serif;
-			margin-top: 15px;
-			span {
-				font-family: $font-GothamBold;
+		.email {
+			font: 15px/24px $font-GothamReg, sans-serif;
+			@media (min-width: $screen-sm-min) and (max-width: 776px) {
+				margin-left: -5px;
 			}
-		};
-	}
-	.button_write {
-		margin-top: 10%;
-		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-			margin-top: 11%;
-		}
-		@media (max-width: $screen-sm-max) {
-			margin-top: 3%;
-			padding-bottom: 7%;
-		}
+			a {
+				color: $text-blue;
+				text-decoration: none;
+				cursor: pointer;
+			}
 
-		a {
-			@include button($color-yellow, $color-border-button, $text-button, 7px, $text-transform-up);
-			&:hover {
-			background-color: $color-dark-grey;
-			color: $color-yellow;
-		}
 		}
 	}
 }
-
-

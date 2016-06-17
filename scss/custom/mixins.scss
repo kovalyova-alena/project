@@ -43,7 +43,7 @@
 
 //title sections with left yellow border
 /*(border width, border-color, font-size, font, color */
-@mixin name-section($border-width, $color-yellow, $font-size, $font, $color) {
+@mixin name-section($border-width, $color-yellow, $font-size, $font, $color, $text-transform-up) {
 	border-left: $border-width solid $color-yellow;
 	p {
 		font: $font-size $font, sans-serif;
