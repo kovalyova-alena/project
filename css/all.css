@@ -5858,6 +5858,9 @@ section.contacts {
       @media (max-width: 767px) {
         .popUp .content_modal p.title_popUp, .popUp .content_modal .confidentiality p a.title_popUp {
           font-size: 18px; } }
+    .popUp .content_modal .form-control:focus {
+      box-shadow: none;
+      border: 2px solid #c74040; }
     .popUp .content_modal form {
       margin-top: 9%; }
       .popUp .content_modal form input {

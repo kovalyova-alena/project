@@ -1,9 +1,7 @@
 @import "core.scss";
-
 a:focus {
-	outline:none;
+	outline: none;
 }
-
 
 header {
 
@@ -90,7 +88,7 @@ section.contacts {
   		max-width: 70%;
   	}
 	background: #fff;
-	margin: 0 auto; 
+	margin: 0 auto;
 	margin-top: 10%;
 	color: $text-dark-grey; 
 	padding: 15px 0 25px;
@@ -116,6 +114,10 @@ section.contacts {
 		@media (max-width: $screen-xs-max) {
 				font-size: 18px;
 		}
+		}
+		.form-control:focus {
+			box-shadow: none;
+			border: 2px solid #c74040;
 		}
 		form {
 			margin-top: 9%;
