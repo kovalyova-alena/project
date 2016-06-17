@@ -359,6 +359,9 @@ section.contacts {
 				&:hover {
 					background-position: bottom;
 				}
+				@media (min-width: $screen-lg-min) {
+					margin: 0 auto;
+				}
 			}
 		}
 		.right_kruger {
@@ -408,17 +411,19 @@ section.contacts {
 
 	/*----Accordion -----*/
 	.panel-group {
+		margin-bottom: 7%;
+		margin-top: 3%;
 		.panel {
 			border: 0;
 			box-shadow: none;
+			margin-top: 0;
 			.panel-heading {
-				padding: 0;
+				padding: 0 0 0 30px;
 				border-top-right-radius: 0;
 				border-top-left-radius: 0;
 				border-top: 1px solid $color-grey;
 				border-bottom: 0;
 				background: #fff;
-
 				a {
 					@include inline-block;
 					text-decoration: none;
@@ -441,9 +446,18 @@ section.contacts {
 					background-position: bottom;
 				}
 			}
+			.panel-heading#headingFour {
+				border-bottom: 1px solid #f3f3f3;
+			}
 			.panel-body {
 				background: $color-grey;
-			}
+				font: 15px/20px $font-GothamReg, sans-serif;
+				padding: 15px 15px 15px 30px;
+				a {
+					border-bottom: 1px solid #d1daed;
+					text-decoration: none;
+				}
+				}
 		}
 		.panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
 			border-top: 0;

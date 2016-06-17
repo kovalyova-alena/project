@@ -6092,6 +6092,9 @@ section.contacts {
         background: url("../img/our-rooms/laboratory.jpg") top; }
         .pick_room .rowRooms .left_laboratory .laboratory:hover {
           background-position: bottom; }
+        @media (min-width: 1200px) {
+          .pick_room .rowRooms .left_laboratory .laboratory {
+            margin: 0 auto; } }
     @media (max-width: 991px) {
       .pick_room .rowRooms .right_kruger {
         padding-left: 0;
@@ -6129,37 +6132,48 @@ section.contacts {
     display: inline-block;
     width: 100%;
     margin-top: 5px; }
-  .rules .panel-group .panel {
-    border: 0;
-    box-shadow: none; }
-    .rules .panel-group .panel .panel-heading {
-      padding: 0;
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-      border-top: 1px solid #f3f3f3;
-      border-bottom: 0;
-      background: #fff; }
-      .rules .panel-group .panel .panel-heading a {
-        display: inline-block;
-        width: 100%;
-        text-decoration: none;
-        font: 18px/48px "GothamProRegular", sans-serif;
-        color: #333; }
-      .rules .panel-group .panel .panel-heading .sprite_accordion {
-        display: inline-block;
-        float: right;
-        width: 20px;
-        height: 20px;
-        margin: 14px 14px 0 0;
-        background: url("../img/accordion/sprite_accordion.png") no-repeat top right; }
-    .rules .panel-group .panel .panel-heading#headingOne {
-      background: #ebc339; }
-      .rules .panel-group .panel .panel-heading#headingOne .sprite_accordion {
-        background-position: bottom; }
-    .rules .panel-group .panel .panel-body {
-      background: #f3f3f3; }
-  .rules .panel-group .panel-heading + .panel-collapse > .panel-body, .rules .panel-group .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top: 0; }
+  .rules .panel-group {
+    margin-bottom: 7%;
+    margin-top: 3%; }
+    .rules .panel-group .panel {
+      border: 0;
+      box-shadow: none;
+      margin-top: 0; }
+      .rules .panel-group .panel .panel-heading {
+        padding: 0 0 0 30px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top: 1px solid #f3f3f3;
+        border-bottom: 0;
+        background: #fff; }
+        .rules .panel-group .panel .panel-heading a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          font: 18px/48px "GothamProRegular", sans-serif;
+          color: #333; }
+        .rules .panel-group .panel .panel-heading .sprite_accordion {
+          display: inline-block;
+          float: right;
+          width: 20px;
+          height: 20px;
+          margin: 14px 14px 0 0;
+          background: url("../img/accordion/sprite_accordion.png") no-repeat top right; }
+      .rules .panel-group .panel .panel-heading#headingOne {
+        background: #ebc339; }
+        .rules .panel-group .panel .panel-heading#headingOne .sprite_accordion {
+          background-position: bottom; }
+      .rules .panel-group .panel .panel-heading#headingFour {
+        border-bottom: 1px solid #f3f3f3; }
+      .rules .panel-group .panel .panel-body {
+        background: #f3f3f3;
+        font: 15px/20px "GothamProRegular", sans-serif;
+        padding: 15px 15px 15px 30px; }
+        .rules .panel-group .panel .panel-body a {
+          border-bottom: 1px solid #d1daed;
+          text-decoration: none; }
+    .rules .panel-group .panel-heading + .panel-collapse > .panel-body, .rules .panel-group .panel-group .panel-heading + .panel-collapse > .list-group {
+      border-top: 0; }
 
 /*-------------------Section Write Letter -----------------------*/
 .write_letter {
