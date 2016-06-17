@@ -6144,9 +6144,14 @@ a:focus {
         font: 13px/13px 'GothamProBold', sans-serif;
         margin-top: 9%; }
         .popUp .content_modal form button:focus {
-          outline: none;
+          outline: none; }
+        .popUp .content_modal form button:active {
           background: #ebc339;
-          border-color: #ebc339; }
+          border-color: #ebc339;
+          box-shadow: none; }
+        .popUp .content_modal form button a {
+          text-decoration: none;
+          color: #272727; }
     .popUp .content_modal .confidentiality {
       margin-top: 35px;
       margin-bottom: 25px; }
