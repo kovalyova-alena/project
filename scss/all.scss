@@ -13,8 +13,8 @@ header {
 .pick_room {
 	@include inline-block;
 	background: $color-white;
-	padding-top: 6%;
-	padding-bottom: 8%;
+	padding-top: 2%;
+	padding-bottom: 4%;
 	.room_title {
 		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		@media (max-width: $screen-xs-max) {
@@ -96,6 +96,9 @@ header {
 			margin-top: 0;
 			.panel-heading {
 				padding: 0 0 0 30px;
+				@media (max-width: $screen-xs-max) {
+					padding-left: 10px;
+				}
 				border-top-right-radius: 0;
 				border-top-left-radius: 0;
 				border-top: 1px solid $color-grey;
@@ -106,8 +109,12 @@ header {
 					text-decoration: none;
 					font: 18px/48px $font-GothamReg, sans-serif;
 					color: $text-dark-grey;
-					@media (max-width: 470px) {
+					@media (max-width: 525px) {
 						line-height: 24px;
+						font-size: 16px;
+					}
+					.sprite, .FAQ {
+						padding: 0;
 					}
 				}
 				.sprite_accordion {
@@ -117,6 +124,9 @@ header {
 					height: 20px;
 					margin: 14px 14px 0 0;
 					background: url('../img/accordion/sprite_accordion.png') no-repeat top right;
+					@media (min-width: 403px) and (max-width: 525px) {
+						margin-top: 4px;
+					}
 				}
 
 			}
@@ -133,6 +143,9 @@ header {
 				background: $color-grey;
 				font: 15px/20px $font-GothamReg, sans-serif;
 				padding: 15px 15px 15px 30px;
+				@media (max-width: $screen-xs-max) {
+					padding-left: 10px;
+				}
 				a {
 					border-bottom: 1px solid #d1daed;
 					text-decoration: none;

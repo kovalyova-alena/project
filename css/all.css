@@ -5770,8 +5770,8 @@ a:focus {
   display: inline-block;
   width: 100%;
   background: #fff;
-  padding-top: 6%;
-  padding-bottom: 8%; }
+  padding-top: 2%;
+  padding-bottom: 4%; }
   .pick_room .room_title {
     border-left: 3px solid #ebc339; }
     .pick_room .room_title p, .pick_room .room_title .popUp .content_modal .confidentiality p a, .popUp .content_modal .confidentiality p .pick_room .room_title a {
@@ -5861,15 +5861,21 @@ a:focus {
         border-top: 1px solid #f3f3f3;
         border-bottom: 0;
         background: #fff; }
+        @media (max-width: 767px) {
+          .rules .panel-group .panel .panel-heading {
+            padding-left: 10px; } }
         .rules .panel-group .panel .panel-heading a {
           display: inline-block;
           width: 100%;
           text-decoration: none;
           font: 18px/48px "GothamProRegular", sans-serif;
           color: #333; }
-          @media (max-width: 470px) {
+          @media (max-width: 525px) {
             .rules .panel-group .panel .panel-heading a {
-              line-height: 24px; } }
+              line-height: 24px;
+              font-size: 16px; } }
+          .rules .panel-group .panel .panel-heading a .sprite, .rules .panel-group .panel .panel-heading a .FAQ {
+            padding: 0; }
         .rules .panel-group .panel .panel-heading .sprite_accordion {
           display: inline-block;
           float: right;
@@ -5877,6 +5883,9 @@ a:focus {
           height: 20px;
           margin: 14px 14px 0 0;
           background: url("../img/accordion/sprite_accordion.png") no-repeat top right; }
+          @media (min-width: 403px) and (max-width: 525px) {
+            .rules .panel-group .panel .panel-heading .sprite_accordion {
+              margin-top: 4px; } }
       .rules .panel-group .panel .panel-heading#headingOne {
         background: #ebc339; }
         .rules .panel-group .panel .panel-heading#headingOne .sprite_accordion {
@@ -5887,6 +5896,9 @@ a:focus {
         background: #f3f3f3;
         font: 15px/20px "GothamProRegular", sans-serif;
         padding: 15px 15px 15px 30px; }
+        @media (max-width: 767px) {
+          .rules .panel-group .panel .panel-body {
+            padding-left: 10px; } }
         .rules .panel-group .panel .panel-body a {
           border-bottom: 1px solid #d1daed;
           text-decoration: none; }
